@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-10-30 at 16 32 43_f39e77fa](https://github.com/user-attachments/assets/f9e3c881-1828-41b6-85f4-f97011758357)# Shodh-a-Code: Lightweight Real-time Coding Contest Platform
+# Shodh-a-Code: Lightweight Real-time Coding Contest Platform
 
 A full-stack, containerized coding contest platform with:
 - **Backend**: Spring Boot (Java 17), JPA/Hibernate, PostgreSQL
@@ -137,6 +137,15 @@ Trade‑offs
 ---
 
 ## 4) Screenshots
+![WhatsApp Image 2025-10-30 at 16 32 43_bf55ce27](https://github.com/user-attachments/assets/664045d3-8277-4aaf-b0d1-96745887bb25)
+![WhatsApp Image 2025-10-30 at 16 32 53_3208bc95](https://github.com/user-attachments/assets/46d78ed4-cf1e-413d-b8db-8413d49cfaf6)
+![WhatsApp Image 2025-10-30 at 16 33 10_c313b41c](https://github.com/user-attachments/assets/b1dfc138-0237-4345-8f01-db5bc5ad37bf)
+![WhatsApp Image 2025-10-30 at 16 33 34_15e442fb](https://github.com/user-attachments/assets/b8378aaa-a162-4a34-94b0-e5f00cc9062c)
+![WhatsApp Image 2025-10-30 at 16 33 59_efbbc1e8](https://github.com/user-attachments/assets/76ea57a2-c48d-4c2e-b578-adb983502e95)
+
+
+
+
 
 
 
