@@ -1,0 +1,44 @@
+
+services:
+  db:
+    image: postgres:14
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: shodh
+      POSTGRES_PASSWORD: shodhpass
+      POSTGRES_DB: shodh
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    depends_on:
+      - db
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: shodh
+      DB_USER: shodh
+      DB_PASS: shodhpass
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://backend:8080
+    ports:
+      - "3000:3000"
+
+  judge:
+    build: ./judge
+    # no ports; used by backend via `docker run`
+    image: shodh-judge:latest
+
+volumes:
+  db_data:

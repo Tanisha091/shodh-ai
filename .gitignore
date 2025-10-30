@@ -1,0 +1,25 @@
+# Node
+frontend/node_modules
+frontend/.next
+frontend/out
+
+# Java / Maven
+backend/target
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Env
+.env
+backend/.env
+frontend/.env
