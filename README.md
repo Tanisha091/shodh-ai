@@ -1,4 +1,4 @@
-# Shodh-a-Code: Lightweight Real-time Coding Contest Platform
+![WhatsApp Image 2025-10-30 at 16 32 43_f39e77fa](https://github.com/user-attachments/assets/f9e3c881-1828-41b6-85f4-f97011758357)# Shodh-a-Code: Lightweight Real-time Coding Contest Platform
 
 A full-stack, containerized coding contest platform with:
 - **Backend**: Spring Boot (Java 17), JPA/Hibernate, PostgreSQL
@@ -53,7 +53,7 @@ Optional: run pieces locally
 
 ---
 
-## 2) API Design (brief)
+## 2) API Design 
 Base path (inside compose): `http://backend:8080`
 
 - GET `/api/contests/{contestId}`
@@ -112,7 +112,7 @@ Notes
 
 ---
 
-## 3) Design Choices & Justification (short)
+## 3) Design Choices & Justification 
 
 Backend
 - Spring Boot + JPA for fast CRUD and clear layering (entities, repos, services, controllers).
@@ -136,17 +136,14 @@ Trade‑offs
 
 ---
 
+## 4) Screenshots
+
+
+
+---
 ## 4) What’s included
 - Sample contest (ID 1) with two problems and official tests
 - Leaderboard, per‑problem “Solved” badges, judge output panel, and basic code templates for Python/Java/C++
 
-## 5) Troubleshooting
-- Frontend can’t load: ensure `docker compose up --build` completed, then open http://localhost:3000
-- Backend API not reachable from browser: expected; it’s only exposed inside compose. The frontend proxies `/api/*` to `http://backend:8080`.
-- Judge errors or stuck in `Pending`: Docker must be running and the judge image built. Try `docker compose build judge`.
-- Reset database: `docker compose down -v` then bring it back up.
 
----
 
-## 6) License
-MIT (or your preference)
